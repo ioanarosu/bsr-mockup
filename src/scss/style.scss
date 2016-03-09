@@ -1,3 +1,45 @@
-nav {
-  color: blue;
+$primary-color: #fc5620 !default;
+$primary-alt-color: #262626 !default;
+$body-font-color: $primary-alt-color !default;
+$body-font-alt-color: #fff;
+
+$navigation-bg: $primary-color !default;
+$navigation-color: $primary-alt-color !default;
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
 }
+p, a {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import 'objects/icons';
+@import 'objects/header';
+@import 'objects/search';
+@import 'objects/cities';
+@import 'objects/footer';
+
+/////////////////////////////////////// START CHECK THE CITIES/////////
+.toptitle {
+  background-color: $primary-alt-color;
+  text-align: center;
+  padding: 1.5rem 0;
+  &--circle {
+    border: .1rem solid $primary-color;
+    border-radius: 50%;
+    padding: .8rem;
+    margin-right: .5rem;
+    font-size: 2.4rem;
+  }
+  .toptitle--link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $primary-color;
+    font-size: 2.8rem;
+    font-family: 'Shadows Into Light', cursive;
+  }
+}
+/////////////////////////////////////// END CHECK THE CITIES/////////

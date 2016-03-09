@@ -1,0 +1,59 @@
+/////////////////////////////////////////// HEADER/////////////////////
+.topbar {
+  height: 6.0rem;
+  background-color:$primary-color;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  &--icon {
+    height: 3.5rem;
+    width: auto;
+    margin-right: .5rem;
+  }
+  &--name {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+
+  }
+
+}
+.hamburger {
+  margin-right: 0.3rem;
+  cursor: pointer;
+  margin-left: auto;
+  &--icon {
+    display: block;
+    width: 2rem;
+    margin-bottom: 0.3rem;
+    border-bottom: 2px solid $primary-alt-color;
+  }
+}
+.navigation {
+  background-color: $primary-alt-color;
+  display: none;
+  i{
+   font-size: 2.4rem;
+   margin-right: 1rem;
+  }
+  &__visible {
+    display: block;
+  }
+  li {
+    border-bottom: 1px solid lighten($primary-alt-color, 10%);
+  }
+  &--link {
+    color: $body-font-alt-color;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem 0 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 1.4rem;
+  }
+}
+///////////////////////////////////////// END HEADER///////////////////

@@ -1,0 +1,39 @@
+.footer {
+  background-color: lighten($primary-alt-color, 20%);
+  text-align: center;
+  padding: 1rem 0;
+  &--heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: $body-font-alt-color;
+    margin: 3rem 0 1rem 0;
+
+  }
+  &--link {
+    color: $body-font-alt-color;
+    font-weight: 300;
+    font-size: 1.2rem;
+    padding: 0 .5rem;
+  }
+}
+.subscribe {
+  display: flex;
+  max-width: 30rem;
+  margin: 0 auto;
+  &--email {
+    display: flex;
+    flex: 1;
+    padding: 0 1rem;
+  }
+  &--submit {
+    cursor: pointer;
+    background-color: $primary-color;
+    color: $body-font-alt-color;
+    text-align: center;
+    padding: 1rem;
+    white-space: nowrap;
+    flex: 0;
+    display: flex;
+  }
+}
