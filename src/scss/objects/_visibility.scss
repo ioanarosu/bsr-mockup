@@ -1,0 +1,14 @@
+.show-medium-up, .show-desktop-up {
+  display: none!important;
+}
+
+@media #{$medium-up} {
+  .show-medium-up {
+    display: inherit!important;
+  }
+}
+@media #{$large-up} {
+  .show-desktop-up {
+    display: inherit!important;
+  }
+}

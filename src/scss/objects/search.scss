@@ -13,13 +13,14 @@
   font-size: 1.8rem;
   display: flex;
   line-height: 2.7;
-  margin-bottom: 1rem;
+  margin-bottom: 1.3rem;
   background-color: $body-font-alt-color;
+  position: relative;
   &--icon{
     color: $primary-color;
     font-weight: 600;
     position: absolute;
-    left: 4rem;
+    left: 1rem;
   }
   &--input{
     font-size: 1.8rem;
@@ -39,16 +40,73 @@
   }
 }
 .userlocation {
+  @include flex-centered;
   color: $body-font-alt-color;
   text-align: center;
   border: 2px solid $primary-color;
   padding: 1rem;
   font-size: 1.6rem;
   font-weight: normal;
-  display: block;
   &--icon {
     margin-right: .5rem;
     font-weight: 600;
     color: $primary-color;
   }
+}
+
+// ///////////////////////////////////////////////////////////////////////////////////MEDIA QUERIES
+@media #{$medium-up} {
+  .search-container {
+    background: url('/img/steak-tablet.jpg') no-repeat center;
+    .wrapper {
+      background-color: rgba($primary-alt-color, .8);
+      max-width: 60rem;
+      margin: 0 auto;
+      padding: 2.2rem 2rem;
+    }
+    .logo {
+      @include flex-centered;
+      color: $primary-color;
+      margin-bottom: 2rem;
+      &--icon {
+        height: 5.5rem;
+        width: auto;
+        margin-right: 1rem;
+        path {
+          fill: $primary-color;
+        }
+      }
+      &--name {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 4.8rem;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+}
+@media #{$large-up} {
+  .search-container {
+    background: url('/img/steak.jpg') no-repeat center;
+    background-size: cover;
+    .wrapper {
+      max-width: 63rem;
+    }
+    .logo {
+      display: none;
+    }
+  }
+  .userlocation {
+    max-width: 30rem;
+    margin: 0 auto;
+  }
+  .search {
+    &--button {
+     padding: 0 3.2rem;
+     font-weight: 400;
+     i {
+      margin-right: .6rem;
+     }
+    }
+  }
+
 }

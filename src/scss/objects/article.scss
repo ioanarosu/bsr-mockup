@@ -1,0 +1,20 @@
+.article {
+  display: none;
+}
+// ///////////////////////////////////////////////////////////////////////////////////MEDIA QUERIES
+@media #{$medium-up} {
+  .article {
+    padding: 4rem 6rem;
+    display: block;
+    &--title {
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 3.6rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    &--text {
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+  }
+}
