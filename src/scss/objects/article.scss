@@ -18,3 +18,26 @@
     }
   }
 }
+@media #{$large-up} {
+  .article {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 50%;
+    padding: 2rem;
+    height: 20rem;
+    &--title {
+      font-size: 2.8rem;
+    }
+    &--text {
+      font-size: 1.6rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &.custom {
+    height: auto;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 4rem 0;
+  }
+}

@@ -101,5 +101,25 @@
 @media #{$large-up} {
   .city {
     flex: 1 0 25%;
+    &:hover {
+      border-top: .5rem solid $primary-color;
+      .city--name,.city--name__uppercase, .city--border{
+        transform: translateY(-1.2rem);
+        transition: transform 0.55s;
+        font-weight: normal;
+      }
+      .city--mask {
+         background-color: rgba($primary-color, .5%);
+         transition: background-color  1s ease;
+      }
+    }
+  }
+  .showmore {
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%,-98%);
+    &:hover {
+      background-color: darken($primary-color,.5);
+    }
   }
 }

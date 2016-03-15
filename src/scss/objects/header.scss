@@ -119,9 +119,13 @@
     }
     &--name {
       color: $primary-color;
+      -webkit-font-smoothing: antialiased;
     }
   }
   .menu {
     max-width: 63rem;
+    &--link:hover {
+      border-bottom: 1px solid #222;
+    }
   }
 }

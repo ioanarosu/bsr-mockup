@@ -1,11 +1,13 @@
 .footer {
   background-color: $footer-bg;
-  text-align: center;
   padding: 1rem 0 2rem 0;
-  color: $body-font-alt-color;
+}
+.fcontainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  text-align: center;
+  color: $body-font-alt-color;
   &--copyrights {
     margin: 3rem 0 0;
   }
@@ -66,16 +68,25 @@
 // ///////////////////////////////////////////////////////////////////////////////////MEDIA QUERIES
 @media #{$medium-up} {
   .footer {
+    .fcontainer {
     flex-direction: row;
-
-    &--copyrights {
-      flex: 1 0 100%;
-      border-top: .1rem solid lighten($footer-bg,4%);
-      padding-top: 1.5rem;
+      &--copyrights {
+        flex: 1 0 100%;
+        border-top: .1rem solid lighten($footer-bg,4%);
+        padding-top: 1.5rem;
+      }
     }
   }
   .infobox {
       flex: 1 1 33%;
     }
 
+}
+@media #{$large-up} {
+  .footer {
+    .fcontainer {
+      max-width: 100rem;
+      margin: 0 auto;
+    }
+  }
 }
