@@ -130,8 +130,8 @@
     }
   }
   .menu {
-    max-width: 63rem;
-    justify-content: flex-start;
+    max-width: 80rem;
+    justify-content: space-around;
     &--link {
       @include transition-duration;
       &:hover {

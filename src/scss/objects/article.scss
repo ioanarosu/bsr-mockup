@@ -33,11 +33,12 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
+    &__custom {
+      height: auto;
+      max-width: 100rem;
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
   }
-  &.custom {
-    height: auto;
-    max-width: 100rem;
-    margin: 0 auto;
-    padding: 4rem 0;
-  }
+
 }
