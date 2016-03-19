@@ -99,6 +99,10 @@
     &--button {
      padding: 0 3.2rem;
      font-weight: 400;
+     @include transition-duration;
+     &:hover {
+      @include hover-effects;
+     }
      i {
       margin-right: .6rem;
      }
@@ -107,8 +111,11 @@
   .userlocation {
     max-width: 30rem;
     margin: 0 auto;
+    @include transition-duration;
+    .userlocation--icon {
+      @include transition-duration;
+    }
     &:hover {
-      transition: background-color  0.5s ease;
       background-color: $primary-color;
       .userlocation--icon {
         color: $body-font-alt-color;

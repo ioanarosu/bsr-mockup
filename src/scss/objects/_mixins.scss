@@ -3,3 +3,9 @@
   justify-content: center;
   align-items: center;
 }
+@mixin hover-effects {
+  background-color: darken($primary-color, 10%);
+}
+@mixin transition-duration {
+  transition: 0.5s ease;
+}

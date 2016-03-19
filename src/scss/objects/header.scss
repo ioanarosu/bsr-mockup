@@ -11,6 +11,7 @@
 .logomobile {
   display: flex;
   align-items: center;
+  color: $primary-alt-color;
   &--icon {
     height: 3.5rem;
     width: auto;
@@ -72,10 +73,10 @@
 @media #{$medium-up} {
   .topbar {
     justify-content: center;
-
   }
   .topbar-nav {
     width: 100%;
+    height: 100%;
   }
   .navigation {
     display: none;
@@ -89,8 +90,13 @@
   .menu {
     display: flex;
     width: 100%;
-    justify-content: space-around;
-     &--link {
+    height: 100%;
+    justify-content: center;
+    &--link {
+      display: flex;
+      align-items: center;
+    }
+     &--list {
       color: $primary-alt-color;
       display: flex;
       flex-direction: column;
@@ -99,6 +105,7 @@
       text-transform: uppercase;
       font-weight: normal;
       font-size: 1.6rem;
+      padding: 0 3rem;
     }
     i {
       font-size: 2rem;
@@ -124,8 +131,12 @@
   }
   .menu {
     max-width: 63rem;
-    &--link:hover {
-      border-bottom: 1px solid #222;
+    justify-content: flex-start;
+    &--link {
+      @include transition-duration;
+      &:hover {
+        @include hover-effects;
+      }
     }
   }
 }
